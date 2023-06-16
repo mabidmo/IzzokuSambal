@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>IZZOKU 11</title>
+   <link rel="stylesheet" href="dist/output.css">
+   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   </style>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+</head>
+
+<body class="overflow-x-hidden">
+   <!-- Header Start -->
+   <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-50 justify-center">
+      <div class="container">
+         <div class="flex items-center justify-between px-5">
+            <div class="px-0 pt-4">
+               <a href="#home" class="block py-4">
+                  <img src="dist/img/logo.png" alt="home" class="h-10">
+               </a>
+            </div>
+            <div class="flex items-center">
+               <button id="hamburger" name="hamburger" type="button" class="block absolute right-6 pt-5 lg:hidden">
+                  <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                  <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                  <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+               </button>
+
+
+               <nav id="nav-menu" class="hidden absolute bg-white shadow-lg rounded-lg max-w-[250px] w-full right-1 top-full lg:block lg:static 
+                    lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none pt-4 pb-4 lg:pt-8 mr-4 lg:mr-0">
+                  <ul class="block lg:flex mr-5">
+                     <li class="group">
+                        <a href="#home" class="navtem1 text-base text-black  py-2 mx-8 flex lg:text-white">Beranda</a>
+                     </li>
+                     <li class="group">
+                        <a href="#tentangkami"
+                           class="navtem2 text-base text-black py-2 mx-8 flex  lg:text-white">Tentang
+                           Kami</a>
+                     </li>
+                     <li class="group">
+                        <a href="#hubungikami"
+                           class="navtem3 text-base text-black py-2 mx-8 flex  lg:text-white">Hubungi
+                           Kami</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- Header End -->
+
+   <!-- Hero Section start (Sambal Izzoku) -->
+   <section id="home" class="">
+      <!-- Circle -->
+      <div class="relative">
+         <div class="lg:absolute rounded-full h-96 w-96 scale-[1.9] bg-primary lg:transform -translate-y-40 mx-auto lg:-translate-x-72
+            lg:-translate-y-80 md:-translate-x-auto lg:right-0 lg:scale-[3.6]"></div>
+      </div>
+
+      <!-- Produk -->
+      <div
+         class="lg:absolute w-80 lg:scale-150 md:scale-125 lg:-translate-y-16 lg:translate-x-28 md:absolute md:right-1/3 lg:top-3/4 lg:-right-96 lg:w-full z-99"
+         style="scroll-snap-type: x mandatory;">
+         <!-- first -->
+         <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-1" checked />
+            <!-- content #1 -->
+            <div class="w-96 absolute left-1/2 transform -translate-x-1/2 -translate-y-40 lg:-translate-y-64 bg-transparent rounded-lg 
+                  transition-all duration-300 peer-checked:opacity-100 peer-checked:z-10 z-0">
+               <img class="rounded-t-lg h-64 mx-auto" src="dist/img/sambalBawang.png" alt="" />
+
+               <!-- controls -->
+               <div class="absolute top-3/4 w-full flex justify-between z-20">
+                  <label for="carousel-3"
+                     class="inline-block text-primary cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                           clip-rule="evenodd" />
+                     </svg>
+                  </label>
+                  <label for="carousel-2"
+                     class="inline-block text-primary cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                           clip-rule="evenodd" />
+                     </svg>
+                  </label>
+               </div>
+            </div>
+         </div>
+         <!-- second -->
+         <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-2" />
+            <!-- content #2 -->
+            <div class="w-96 absolute left-1/2 transform -translate-x-1/2 -translate-y-40 lg:-translate-y-64 bg-transparent rounded-lg 
+                  transition-all duration-300 peer-checked:opacity-100 peer-checked:z-10 z-0">
+               <img class="rounded-t-lg h-64 mx-auto" src="dist/img/sambalTeri.png" alt="" />
+
+               <!-- controls -->
+               <div class="absolute top-3/4 w-full flex justify-between z-20">
+                  <label for="carousel-1"
+                     class="inline-block text-primary cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                           clip-rule="evenodd" />
+                     </svg>
+                  </label>
+                  <label for="carousel-3"
+                     class="inline-block text-primary cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                           clip-rule="evenodd" />
+                     </svg>
+                  </label>
+               </div>
+            </div>
+         </div>
+         <!-- three -->
+         <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-3" />
+            <!-- content #3 -->
+            <div class="w-96 absolute left-1/2 transform -translate-x-1/2 -translate-y-40 lg:-translate-y-64 bg-transparent rounded-lg 
+               transition-all duration-300 peer-checked:opacity-100 peer-checked:z-10 z-0">
+               <img class="rounded-t-lg h-64 mx-auto" src="dist/img/sambalOtak.png" alt="" />
+
+               <!-- controls -->
+               <div class="absolute top-3/4 w-full flex justify-between z-20">
+                  <label for="carousel-2"
+                     class="inline-block text-primary cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                           clip-rule="evenodd" />
+                     </svg>
+                  </label>
+                  <label for="carousel-1"
+                     class="inline-block text-primary cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                           clip-rule="evenodd" />
+                     </svg>
+                  </label>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+      <!-- Text box -->
+      <div class="flex lg:pt-80 pt-40 lg:max-w-xl lg:ml-60">
+         <div class="flex flex-wrap">
+            <div class="w-full self-center px-4">
+               <h1 style="font-family: lobster;"
+                  class="font-extrabold text-primary lg:font-medium text-4xl md:text-5xl lg:text-7xl">Sambal IZZOKU</h1>
+               <p class="mt-2 mb-10 font-medium text-sm md:text-base lg:text-xl">Sambal <span
+                     class="text-primary font-bold">murah tapi bukan murahan</span> dengan sensasi sambal kualitas
+                  premium khas daerah Gresik yang siap menemani hidangan makanan mu.</p>
+
+               <a href="#" class="text-base font-semibold text-white bg-primary py-4 rounded-full px-10 hover:shadow-lg 
+                    hover:opacity-80 transition duration-300 ease-in-out">
+                  Pesan Sekarang
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Hero Section End -->
+
+   <!-- Section 2 (Varian Sambal) -->
+   <section id="variansambal" class="relative pt-10 lg:top-16">
+      <div class="container">
+         <div class="flex pt-16 lg:pt-60 pb-14 z-50">
+            <!-- Circle -->
+            <div class="relative z-30">
+               <div class="lg:absolute absolute rounded-full h-72 w-72 bg-primary lg:transform -translate-x-52 lg:-translate-x-72
+               lg:translate-y-52 md:-translate-x-56 lg:right-0 lg:scale-[3.2]">
+                  <img src="dist/img/sambalTeriTrans.png"
+                     class="h-20 rotate-12 translate-y-24 translate-x-52 md:translate-y-10" alt="">
+               </div>
+            </div>
+
+            <div class="grid grid-rows-2">
+               <!-- Label -->
+               <div class="lg:pt-7 pt-0 lg:max-w-7xl lg:ml-60">
+                  <div class="flex w-full flex-wrap">
+                     <div class="w-96 lg:w-full self-center px-4 pl-32 lg:pl-2">
+                        <h1 style="font-family: lobster;"
+                           class="font-extrabold text-primary lg:font-medium text-4xl md:text-5xl lg:text-7xl">Varian
+                           Sambal</h1>
+                        <p class="mt-2 mb-10 font-medium text-sm md:text-base lg:text-xl pt-8">Sambal Izzoku memiliki
+                           banyak
+                           varian yang bisa sobat Izzoku dapatkan di toko-toko terdekat. Mulai dari sambal teri, sambal
+                           bawang,
+                           sambal otak-otak, sambal tuna, sambal ikan tongkol, sambal krawu, sambal cumi, sambal klotok,
+                           sambal rujak manis, sambal pecel,
+                           sambal ebi, sambal pete, sambal ikan tuna, dan sambal bandeng asap.</p>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Card Produk -->
+               <div class="flex py-5 w-full z-50 top-96">
+                  <div class="swiper-container">
+                     <div class="swiper-wrapper">
+
+
+                        <div class="swiper-slide block lg:mx-10 z-50">
+                           <div class="container h-auto">
+                              <svg width="418" height="315" viewBox="0 0 418 315" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="">
+                                 <g filter="url(#filter0_d_501_41)">
+                                    <path
+                                       d="M274.842 7.24273C349.121 7.90882 408.796 68.6641 408.13 142.943L406.721 300.08L142.604 297.711C68.6005 297.048 9.1469 236.518 9.81051 162.515L11.2241 4.87879L274.842 7.24273Z"
+                                       fill="#960E0D" />
+                                 </g>
+                                 <defs>
+                                    <filter id="filter0_d_501_41" x="0.805054" y="0.878784" width="416.331"
+                                       height="313.201" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                       <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                       <feColorMatrix in="SourceAlpha" type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                       <feOffset dy="5" />
+                                       <feGaussianBlur stdDeviation="4.5" />
+                                       <feComposite in2="hardAlpha" operator="out" />
+                                       <feColorMatrix type="matrix"
+                                          values="0 0 0 0 0.0166667 0 0 0 0 0.00569444 0 0 0 0 0.00569444 0 0 0 0.37 0" />
+                                       <feBlend mode="normal" in2="BackgroundImageFix"
+                                          result="effect1_dropShadow_501_41" />
+                                       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_501_41"
+                                          result="shape" />
+                                    </filter>
+                                 </defs>
+                              </svg>
+                              <!-- Button Produk -->
+                              <button type="button" class="show-modal">
+                                 <svg width="407" height="407" viewBox="0 0 407 407"
+                                    class="absolute bg-black rounded-full top-0 z-50 translate-x-80 h-20 w-20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="203.5" cy="203.5" r="203.5" fill="#1C0909" />
+                                    <path d="M203.5 136V271M136 203.5H271" stroke="white" stroke-width="15"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <!-- Image Produk -->
+                              <img src="dist/img/background proudk.png" alt="sambalbawang"
+                                 class="absolute w-32 lg:w-32 -top-8 rounded-full -translate-x-3">
+                              <!-- gambar Produk -->
+                              <img src="dist/img/sambalTeriTrans.png" alt="" class="absolute h-16 lg:h-14 translate-x-1 lg:translate-x-0 lg:-translate-y-2 top-0">
+                              <div class="container flex-auto">
+                                 <h1 class="absolute text-xl lg:text-2xl lg:w-36 top-28 lg:top-20 font-bold left-14 z-50 text-white">Sambal Teri
+                                 </h1>
+                                 <h1 class="absolute text-xl lg:text-2xl lg:w-40 top-36 lg:top-28 font-light left-14 z-50 text-white">Sambal Izzoku
+                                 </h1>
+                                 <p
+                                    class="absolute z-50 translate-x-72 text-xl lg:text-2xl lg:translate-x-64 -translate-y-24 lg:-translate-y-28 text-white font-bold">
+                                    IDR 30K
+                                 </p>
+                                 <svg width="452" height="82" viewBox="0 0 452 82" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="absolute top-0 h-7 -translate-x-24 lg:translate-y-40 translate-y-44">
+                                    <path
+                                       d="M41.5 0L54.169 26.9884L82.5 31.3428L62 52.3386L66.838 82L41.5 67.9884L16.162 82L21 52.3386L0.5 31.3428L28.831 26.9884L41.5 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M133.75 0L146.419 26.9884L174.75 31.3428L154.25 52.3386L159.088 82L133.75 67.9884L108.412 82L113.25 52.3386L92.75 31.3428L121.081 26.9884L133.75 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M318.25 0L330.919 26.9884L359.25 31.3428L338.75 52.3386L343.588 82L318.25 67.9884L292.912 82L297.75 52.3386L277.25 31.3428L305.581 26.9884L318.25 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M226 0L238.669 26.9884L267 31.3428L246.5 52.3386L251.338 82L226 67.9884L200.662 82L205.5 52.3386L185 31.3428L213.331 26.9884L226 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M410.5 0L423.169 26.9884L451.5 31.3428L431 52.3386L435.838 82L410.5 67.9884L385.162 82L390 52.3386L369.5 31.3428L397.831 26.9884L410.5 0Z"
+                                       fill="#EBFF00" />
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide block lg:mx-10 z-50">
+                           <div class="container h-auto">
+                              <svg width="418" height="315" viewBox="0 0 418 315" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="">
+                                 <g filter="url(#filter0_d_501_41)">
+                                    <path
+                                       d="M274.842 7.24273C349.121 7.90882 408.796 68.6641 408.13 142.943L406.721 300.08L142.604 297.711C68.6005 297.048 9.1469 236.518 9.81051 162.515L11.2241 4.87879L274.842 7.24273Z"
+                                       fill="#960E0D" />
+                                 </g>
+                                 <defs>
+                                    <filter id="filter0_d_501_41" x="0.805054" y="0.878784" width="416.331"
+                                       height="313.201" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                       <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                       <feColorMatrix in="SourceAlpha" type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                       <feOffset dy="5" />
+                                       <feGaussianBlur stdDeviation="4.5" />
+                                       <feComposite in2="hardAlpha" operator="out" />
+                                       <feColorMatrix type="matrix"
+                                          values="0 0 0 0 0.0166667 0 0 0 0 0.00569444 0 0 0 0 0.00569444 0 0 0 0.37 0" />
+                                       <feBlend mode="normal" in2="BackgroundImageFix"
+                                          result="effect1_dropShadow_501_41" />
+                                       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_501_41"
+                                          result="shape" />
+                                    </filter>
+                                 </defs>
+                              </svg>
+                              <!-- Button Produk -->
+                              <button type="button" class="show-modal">
+                                 <svg width="407" height="407" viewBox="0 0 407 407"
+                                    class="absolute bg-black rounded-full top-0 z-50 translate-x-80 h-20 w-20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="203.5" cy="203.5" r="203.5" fill="#1C0909" />
+                                    <path d="M203.5 136V271M136 203.5H271" stroke="white" stroke-width="15"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <!-- Image Produk -->
+                              <img src="dist/img/background proudk.png" alt="sambalbawang"
+                                 class="absolute w-32 lg:w-32 -top-8 rounded-full -translate-x-3">
+                              <!-- gambar Produk -->
+                              <img src="dist/img/sambalTeriTrans.png" alt="" class="absolute h-16 lg:h-14 translate-x-1 lg:translate-x-0 lg:-translate-y-2 top-0">
+                              <div class="container flex-auto">
+                                 <h1 class="absolute text-xl lg:text-2xl lg:w-48 top-28 lg:top-20 font-bold left-14 z-50 text-white">Sambal Bawang
+                                 </h1>
+                                 <h1 class="absolute text-xl lg:text-2xl lg:w-40 top-36 lg:top-28 font-light left-14 z-50 text-white">Sambal Izzoku
+                                 </h1>
+                                 <p
+                                    class="absolute z-50 translate-x-72 text-xl lg:text-2xl lg:translate-x-64 -translate-y-24 lg:-translate-y-28 text-white font-bold">
+                                    IDR 30K
+                                 </p>
+                                 <svg width="452" height="82" viewBox="0 0 452 82" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="absolute top-0 h-7 -translate-x-24 lg:translate-y-40 translate-y-44">
+                                    <path
+                                       d="M41.5 0L54.169 26.9884L82.5 31.3428L62 52.3386L66.838 82L41.5 67.9884L16.162 82L21 52.3386L0.5 31.3428L28.831 26.9884L41.5 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M133.75 0L146.419 26.9884L174.75 31.3428L154.25 52.3386L159.088 82L133.75 67.9884L108.412 82L113.25 52.3386L92.75 31.3428L121.081 26.9884L133.75 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M318.25 0L330.919 26.9884L359.25 31.3428L338.75 52.3386L343.588 82L318.25 67.9884L292.912 82L297.75 52.3386L277.25 31.3428L305.581 26.9884L318.25 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M226 0L238.669 26.9884L267 31.3428L246.5 52.3386L251.338 82L226 67.9884L200.662 82L205.5 52.3386L185 31.3428L213.331 26.9884L226 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M410.5 0L423.169 26.9884L451.5 31.3428L431 52.3386L435.838 82L410.5 67.9884L385.162 82L390 52.3386L369.5 31.3428L397.831 26.9884L410.5 0Z"
+                                       fill="#EBFF00" />
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide block lg:mx-10 z-50">
+                           <div class="container h-auto">
+                              <svg width="418" height="315" viewBox="0 0 418 315" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="">
+                                 <g filter="url(#filter0_d_501_41)">
+                                    <path
+                                       d="M274.842 7.24273C349.121 7.90882 408.796 68.6641 408.13 142.943L406.721 300.08L142.604 297.711C68.6005 297.048 9.1469 236.518 9.81051 162.515L11.2241 4.87879L274.842 7.24273Z"
+                                       fill="#960E0D" />
+                                 </g>
+                                 <defs>
+                                    <filter id="filter0_d_501_41" x="0.805054" y="0.878784" width="416.331"
+                                       height="313.201" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                       <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                       <feColorMatrix in="SourceAlpha" type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                       <feOffset dy="5" />
+                                       <feGaussianBlur stdDeviation="4.5" />
+                                       <feComposite in2="hardAlpha" operator="out" />
+                                       <feColorMatrix type="matrix"
+                                          values="0 0 0 0 0.0166667 0 0 0 0 0.00569444 0 0 0 0 0.00569444 0 0 0 0.37 0" />
+                                       <feBlend mode="normal" in2="BackgroundImageFix"
+                                          result="effect1_dropShadow_501_41" />
+                                       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_501_41"
+                                          result="shape" />
+                                    </filter>
+                                 </defs>
+                              </svg>
+                              <!-- Button Produk -->
+                              <button type="button" class="show-modal">
+                                 <svg width="407" height="407" viewBox="0 0 407 407"
+                                    class="absolute bg-black rounded-full top-0 z-50 translate-x-80 h-20 w-20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="203.5" cy="203.5" r="203.5" fill="#1C0909" />
+                                    <path d="M203.5 136V271M136 203.5H271" stroke="white" stroke-width="15"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <!-- Image Produk -->
+                              <img src="dist/img/background proudk.png" alt="sambalbawang"
+                                 class="absolute w-32 lg:w-32 -top-8 rounded-full -translate-x-3">
+                              <!-- gambar Produk -->
+                              <img src="dist/img/sambalTeriTrans.png" alt="" class="absolute h-16 lg:h-14 translate-x-1 lg:translate-x-0 lg:-translate-y-2 top-0">
+                              <div class="container flex-auto">
+                                 <h1 class="absolute text-xl lg:text-2xl lg:w-48 top-28 lg:top-20 font-bold left-14 z-50 text-white">Sambal Bawang
+                                 </h1>
+                                 <h1 class="absolute text-xl lg:text-2xl lg:w-40 top-36 lg:top-28 font-light left-14 z-50 text-white">Sambal Izzoku
+                                 </h1>
+                                 <p
+                                    class="absolute z-50 translate-x-72 text-xl lg:text-2xl lg:translate-x-64 -translate-y-24 lg:-translate-y-28 text-white font-bold">
+                                    IDR 30K
+                                 </p>
+                                 <svg width="452" height="82" viewBox="0 0 452 82" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="absolute top-0 h-7 -translate-x-24 lg:translate-y-40 translate-y-44">
+                                    <path
+                                       d="M41.5 0L54.169 26.9884L82.5 31.3428L62 52.3386L66.838 82L41.5 67.9884L16.162 82L21 52.3386L0.5 31.3428L28.831 26.9884L41.5 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M133.75 0L146.419 26.9884L174.75 31.3428L154.25 52.3386L159.088 82L133.75 67.9884L108.412 82L113.25 52.3386L92.75 31.3428L121.081 26.9884L133.75 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M318.25 0L330.919 26.9884L359.25 31.3428L338.75 52.3386L343.588 82L318.25 67.9884L292.912 82L297.75 52.3386L277.25 31.3428L305.581 26.9884L318.25 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M226 0L238.669 26.9884L267 31.3428L246.5 52.3386L251.338 82L226 67.9884L200.662 82L205.5 52.3386L185 31.3428L213.331 26.9884L226 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M410.5 0L423.169 26.9884L451.5 31.3428L431 52.3386L435.838 82L410.5 67.9884L385.162 82L390 52.3386L369.5 31.3428L397.831 26.9884L410.5 0Z"
+                                       fill="#EBFF00" />
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide block lg:mx-10 z-50">
+                           <div class="container h-auto">
+                              <svg width="418" height="315" viewBox="0 0 418 315" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="">
+                                 <g filter="url(#filter0_d_501_41)">
+                                    <path
+                                       d="M274.842 7.24273C349.121 7.90882 408.796 68.6641 408.13 142.943L406.721 300.08L142.604 297.711C68.6005 297.048 9.1469 236.518 9.81051 162.515L11.2241 4.87879L274.842 7.24273Z"
+                                       fill="#960E0D" />
+                                 </g>
+                                 <defs>
+                                    <filter id="filter0_d_501_41" x="0.805054" y="0.878784" width="416.331"
+                                       height="313.201" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                       <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                       <feColorMatrix in="SourceAlpha" type="matrix"
+                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                       <feOffset dy="5" />
+                                       <feGaussianBlur stdDeviation="4.5" />
+                                       <feComposite in2="hardAlpha" operator="out" />
+                                       <feColorMatrix type="matrix"
+                                          values="0 0 0 0 0.0166667 0 0 0 0 0.00569444 0 0 0 0 0.00569444 0 0 0 0.37 0" />
+                                       <feBlend mode="normal" in2="BackgroundImageFix"
+                                          result="effect1_dropShadow_501_41" />
+                                       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_501_41"
+                                          result="shape" />
+                                    </filter>
+                                 </defs>
+                              </svg>
+                              <!-- Button Produk -->
+                              <button type="button" class="show-modal">
+                                 <svg width="407" height="407" viewBox="0 0 407 407"
+                                    class="absolute bg-black rounded-full top-0 z-50 translate-x-80 h-20 w-20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="203.5" cy="203.5" r="203.5" fill="#1C0909" />
+                                    <path d="M203.5 136V271M136 203.5H271" stroke="white" stroke-width="15"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <!-- Image Produk -->
+                              <img src="dist/img/background proudk.png" alt="sambalbawang"
+                                 class="absolute w-32 lg:w-32 -top-8 rounded-full -translate-x-3">
+                              <!-- gambar Produk -->
+                              <img src="dist/img/sambalTeriTrans.png" alt="" class="absolute h-16 lg:h-14 translate-x-1 lg:translate-x-0 lg:-translate-y-2 top-0">
+                              <div class="container flex-auto">
+                                 <h1 class="absolute text-xl lg:text-2xl lg:w-48 top-28 lg:top-20 font-bold left-14 z-50 text-white">Sambal Bawang
+                                 </h1>
+                                 <h1 class="absolute text-xl lg:text-2xl lg:w-40 top-36 lg:top-28 font-light left-14 z-50 text-white">Sambal Izzoku
+                                 </h1>
+                                 <p
+                                    class="absolute z-50 translate-x-72 text-xl lg:text-2xl lg:translate-x-64 -translate-y-24 lg:-translate-y-28 text-white font-bold">
+                                    IDR 30K
+                                 </p>
+                                 <svg width="452" height="82" viewBox="0 0 452 82" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="absolute top-0 h-7 -translate-x-24 lg:translate-y-40 translate-y-44">
+                                    <path
+                                       d="M41.5 0L54.169 26.9884L82.5 31.3428L62 52.3386L66.838 82L41.5 67.9884L16.162 82L21 52.3386L0.5 31.3428L28.831 26.9884L41.5 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M133.75 0L146.419 26.9884L174.75 31.3428L154.25 52.3386L159.088 82L133.75 67.9884L108.412 82L113.25 52.3386L92.75 31.3428L121.081 26.9884L133.75 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M318.25 0L330.919 26.9884L359.25 31.3428L338.75 52.3386L343.588 82L318.25 67.9884L292.912 82L297.75 52.3386L277.25 31.3428L305.581 26.9884L318.25 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M226 0L238.669 26.9884L267 31.3428L246.5 52.3386L251.338 82L226 67.9884L200.662 82L205.5 52.3386L185 31.3428L213.331 26.9884L226 0Z"
+                                       fill="#EBFF00" />
+                                    <path
+                                       d="M410.5 0L423.169 26.9884L451.5 31.3428L431 52.3386L435.838 82L410.5 67.9884L385.162 82L390 52.3386L369.5 31.3428L397.831 26.9884L410.5 0Z"
+                                       fill="#EBFF00" />
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <!-- Tambahkan card tambahan di sini sesuai kebutuhan -->
+                     </div>
+                     <div class="swiper-pagination my-1 bg-slate-600"></div>
+                  </div>
+
+               </div>
+               <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            </div>
+
+         </div>
+   </section>
+   <!-- Section 2 end -->
+
+   <!-- Modal Produk -->
+   <div style="z-index: 9999;"
+      class="modal h-screen max-h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden overflow-y-auto">
+      <!-- modal -->
+      <div class="bg-white w-96 rounded-lg shadow lg:w-1/3">
+         <!-- modal header -->
+         <div class="border-b px-4 py-2 text-lg lg:text-xl text-black font-medium">
+            Pesan Di Sini
+         </div>
+         <!-- modal body -->
+         <div class="p-3">
+            <form>
+               <div class="mb-4">
+                  <label for="nama" class="block text-black text-sm font-bold mb-2">Nama:</label>
+                  <input type="text" id="nama" name="nama" required
+                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+               </div>
+               <div class="mb-4">
+                  <label for="nomortelepon" class="block text-black text-sm font-bold mb-2">Nomor
+                     Telepon/WA:</label>
+                  <input type="number" id="nomortelepon" name="nomortelepon" required
+                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+               </div>
+               <div class="mb-4">
+                  <label for="alamat" class="block text-black text-sm font-bold mb-2">Alamat:</label>
+                  <textarea id="alamat" name="alamat" required
+                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+               </div>
+               <div id="produk-container">
+                  <div class="produk grid grid-cols-2 gap-2">
+                     <div class="mb-4">
+                        <label class="block text-black text-sm font-bold mb-2">Pilih Produk 1:</label>
+                        <select name="produk[]" required
+                           class="produk-select shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                           <option value="" disabled selected>Pilih produk...</option>
+                           <option value="Produk 1" data-price="25000">Sambal Tuna</option>
+                           <option value="Produk 2" data-price="25000">Sambal cumi</option>
+                           <option value="Produk 3" data-price="25000">Sambal teri</option>
+                           <option value="Produk 4" data-price="25000">Sambal Bawang</option>
+                           <option value="Produk 5" data-price="30000">Sambal Otak-Otak</option>
+                           <option value="Produk 6" data-price="5000">Gatau</option>
+                        </select>
+                     </div>
+                     <div class="mb-4">
+                        <label class="block text-black text-sm font-bold mb-2">Jumlah Produk 1:</label>
+                        <input type="number" min="0" value="0" max="10" step="1" name="jumlahproduk[]" required
+                           class="jumlahproduk-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                     </div>
+                  </div>
+               </div>
+               <button type="button" id="tambah-produk"
+                  class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 mb-4 px-4 rounded focus:outline-none focus:shadow-outline">Tambah
+                  Produk</button>
+               <div class="mb-4">
+                  <span id="totalharga"></span>
+               </div>
+               <div class="flex justify-end items-center w-100 border-t p-3 w-">
+                  <input type="submit" value="Kirim"
+                     class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                  <button type="button"
+                     class="bg-red-600 hover:bg-red-700 px-4 mx-2 py-2 rounded text-white mr-1 close-modal">cancel</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         const tambahProdukButton = document.getElementById("tambah-produk");
+         const produkContainer = document.getElementById("produk-container");
+         const totalHargaSpan = document.getElementById("totalharga");
+         let produkCount = 1;
+
+         tambahProdukButton.addEventListener("click", function () {
+            const produk = createProdukElement();
+            produkContainer.appendChild(produk);
+         });
+
+         produkContainer.addEventListener("click", function (event) {
+            if (event.target.classList.contains("hapus-produk")) {
+               const produk = event.target.closest(".produk");
+               produkContainer.removeChild(produk);
+               updateTotalHarga();
+            }
+         });
+
+         produkContainer.addEventListener("change", function (event) {
+            if (event.target.classList.contains("jumlahproduk-input")) {
+               updateTotalHarga();
+            }
+         });
+
+         function createProdukElement() {
+            const produk = document.createElement("div");
+            produk.classList.add("produk", "grid", "grid-cols-2", "gap-2");
+
+            const class1 = document.createElement("div");
+            class1.classList.add("mb-4");
+
+            const produkLabel = document.createElement("label");
+            produkLabel.textContent = "Pilih Produk " + (produkCount + 1) + ":";
+            produkLabel.classList.add("block", "text-black", "text-sm", "font-bold", "mb-2");
+            class1.appendChild(produkLabel);
+
+            const produkSelect = document.createElement("select");
+            produkSelect.name = "produk";
+            produkSelect.required = true;
+            produkSelect.classList.add(
+               "produk-select",
+               "shadow",
+               "appearance-none",
+               "border",
+               "rounded",
+               "w-full",
+               "py-2",
+               "px-3",
+               "text-gray-700",
+               "leading-tight",
+               "focus:outline-none",
+               "focus:shadow-outline"
+            );
+            produkSelect.innerHTML = `
+               <option value="" disabled selected>Pilih produk...</option>
+               <option value="Produk 1" data-price="25000">Sambal Tuna</option>
+               <option value="Produk 2" data-price="25000">Sambal cumi</option>
+               <option value="Produk 3" data-price="25000">Sambal teri</option>
+               <option value="Produk 4" data-price="25000">Sambal Bawang</option>
+               <option value="Produk 5" data-price="30000">Sambal Otak-Otak</option>
+               <option value="Produk 6" data-price="5000">Gatau</option>`;
+            class1.appendChild(produkSelect);
+
+            produk.appendChild(class1);
+
+            const class2 = document.createElement("div");
+            class2.classList.add("mb-4");
+
+            const jumlahProdukLabel = document.createElement("label");
+            jumlahProdukLabel.textContent = "Jumlah Produk";
+            jumlahProdukLabel.classList.add("block", "text-black", "text-sm", "font-bold", "mb-2");
+            class2.appendChild(jumlahProdukLabel);
+
+            const jumlahProdukInput = document.createElement("input");
+            jumlahProdukInput.type = "number";
+            jumlahProdukInput.min = "0";
+            jumlahProdukInput.value = "0";
+            jumlahProdukInput.max = "10";
+            jumlahProdukInput.step = "1";
+            jumlahProdukInput.name = "jumlahproduk";
+            jumlahProdukInput.required = true;
+            jumlahProdukInput.classList.add(
+               "jumlahproduk-input",
+               "shadow",
+               "appearance-none",
+               "border",
+               "rounded",
+               "w-full",
+               "py-2",
+               "px-3",
+               "text-gray-700",
+               "leading-tight",
+               "focus:outline-none",
+               "focus:shadow-outline"
+            );
+            class2.appendChild(jumlahProdukInput);
+
+            produk.appendChild(class2);
+
+            const hapusProdukButton = document.createElement("button");
+            hapusProdukButton.type = "button";
+            hapusProdukButton.textContent = "Hapus Produk";
+            hapusProdukButton.classList.add(
+               "hapus-produk",
+               "my-3",
+               "w-36",
+               "bg-red-600",
+               "hover:bg-red-700",
+               "px-4",
+               "py-2",
+               "rounded",
+               "text-white"
+            );
+            produk.appendChild(hapusProdukButton);
+
+            produkCount++;
+            return produk;
+         }
+
+
+
+         function updateTotalHarga() {
+            const jumlahProdukInputs = document.getElementsByClassName("jumlahproduk-input");
+            let totalHarga = 0;
+
+            for (let i = 0; i < jumlahProdukInputs.length; i++) {
+               const jumlah = parseInt(jumlahProdukInputs[i].value);
+               const produkSelect = jumlahProdukInputs[i].closest(".produk").querySelector("select");
+               const harga = parseInt(produkSelect.options[produkSelect.selectedIndex].getAttribute("data-price"));
+               totalHarga += jumlah * harga;
+            }
+
+            totalHargaSpan.textContent = "Total Harga: Rp. " + totalHarga.toFixed(0);
+         }
+      });
+   </script>
+
+
+   <!-- Section 3 (Kenapa Harus Sambal Izzoku) -->
+   <section class="lg:mt-60 lg:top-80">
+      <!-- Circle -->
+      <div class="relative">
+         <div class="lg:absolute absolute rounded-full h-80 w-80 bg-primary lg:transform md:translate-x-1/2 md:right-0 translate-y-40 translate-x-80 lg:translate-x-80
+         lg:translate-y-80 lg:right-0 lg:scale-[3.2]">
+            <img src="dist/img/sambalTeriTrans.png" class="h-16 -rotate-12 translate-y-10 -translate-x-6" alt="">
+         </div>
+      </div>
+
+      <!-- Label -->
+      <div class="flex flex-wrap">
+         <div class="w-full self-center px-5 md:pr-56 md:pl-16 lg:mx-64 pr-20 pt-10 md:pt-40">
+            <h1 style="font-family: lobster;"
+               class="font-extrabold text-primary lg:text-right lg:font-medium text-4xl md:text-5xl lg:text-7xl">Kenapa
+               Harus Sambal
+               Izzoku?</h1>
+            <p class="mt-2 font-medium text-sm md:text-base lg:text-right lg:text-xl pt-8">Sambal Izzoku memiliki
+               kelebihan dan keunggulan,
+               salah satunya adalah sudah ekspor ke luar negeri, yaitu Jepang, Australia, dan Hongkong.</p>
+
+         </div>
+      </div>
+
+      <!-- Card  -->
+      <div class="flex flex-wrap scale-75 lg:pt-32">
+         <div class="w-full mb-9 justify-content-center lg:w-1/2 xl:w-1/3">
+            <div
+               class="bg-white h-auto md:w-4/5 mx-auto rounded-3xl shadow-xl hover:scale-125 transition ease-in-out duration-300">
+               <img src="dist/img/ekpor.png" class="p-5 mx-auto" alt="">
+               <p class="px-9 py-9 text-lg md:text-xl">Ekspor sambal Izzoku hingga Jepang, Australia, dan Hongkong.</p>
+            </div>
+         </div>
+         <div class="w-full mb-9 px-6 justify-items-center lg:w-1/2 xl:w-1/3">
+            <div
+               class="bg-white h-auto md:w-4/5 mx-auto rounded-3xl shadow-xl hover:scale-125 transition ease-in-out duration-300">
+               <img src="dist/img/teruji klinis.png" class="p-5" alt="">
+               <p class="px-9 py-9 text-lg md:text-xl">Sudah terdaftar diberbagai keperluan izin berusaha untuk UMKM.
+               </p>
+            </div>
+         </div>
+         <div class="w-full mb-9 px-6 justify-items-center lg:w-1/2 xl:w-1/3">
+            <div
+               class="bg-white h-auto md:w-4/5 mx-auto rounded-3xl shadow-xl hover:scale-125 transition ease-in-out duration-300">
+               <img src="dist/img/murah.png" class="p-5" alt="">
+               <p class="px-9 py-9 text-lg md:text-xl">Walaupun memiliki harga miring, namun kualitas tetap menjadi
+                  nomor satu.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Section 3 End -->
+
+   <!-- Section 4 (Apa Kata Mereka)  -->
+   <section id="tentangkami" class="lg:mt-36">
+      <div class="flex flex-auto items-center justify-content-center">
+         <div class="w-full h-auto bg-primary">
+            <!-- Tulisan -->
+            <h1 style="font-family: lobster;"
+               class="flex text-white mx-auto my-4 lg:my-10 pt-10 text-3xl lg:text-5xl justify-center">
+               Apa Kata
+               Mereka?</h1>
+
+            <!-- Image sambal -->
+            <img src="dist/img/sambalTeriTrans.png"
+               class="absolute h-16 lg:h-24 lg:translate-x-16 translate-x-5 -translate-y-1 rotate-12" alt="">
+
+            <!-- Card Slider -->
+            <div
+               class="slider h-auto grid grid-cols-4 gap-20 md:gap-80 lg:gap-52  mx-8 justify-content-center gap-x-72 z-50 pt-16 pl-20 pr-72 lg:pr-0 lg:pl-0 lg:mx-60 overflow-x-hidden snap-mandatory scroll-snap-x-mandatory">
+               <div class="card lg:h-auto w-60 lg:w-80 bg-white flex-auto snap-start rounded-xl p-4 shadow-lg">
+                  <img src="dist/img/arjuna.png" alt="Image 1" class="w-auto flex pt-0">
+                  <h1 style="font-family: lobster;"
+                     class="lg:font-medium text-primary text-xl pt-4 md:text-xl lg:text-xl flex justify-center mx-auto">
+                     A.Arjuna Putra Nganro</h1>
+                  <p class="text-primary flex justify-center py-1">Mahasiswa UISI</p>
+                  <p class="felx text-center justify-center pt-2">“Pertama kali nyoba, nggak kecewa, cocoklah buat di
+                     Sulawesi yang mayoritas masakannya pedas.”</p>
+               </div>
+               <div class="card lg:h-auto w-60 lg:w-80 bg-white flex-auto snap-start rounded-xl p-4 shadow-lg">
+                  <img src="dist/img/dendra.png" alt="Image 1" class="w-auto flex pt-0">
+                  <h1 style="font-family: lobster;"
+                     class="lg:font-medium text-primary text-xl pt-4 md:text-xl lg:text-xl flex justify-center mx-auto">
+                     Dendra Ardana Putra</h1>
+                  <p class="text-primary flex justify-center py-1">Mahasiswa UISI</p>
+                  <p class="felx text-center justify-center pt-2">“Pertama kali nyoba, nggak kecewa, cocoklah buat di
+                     Sulawesi yang mayoritas masakannya pedas.”</p>
+               </div>
+               <div class="card lg:h-auto w-60 lg:w-80 bg-white flex-auto snap-start rounded-xl p-4 shadow-lg">
+                  <img src="dist/img/sutan.png" alt="Image 1" class="w-auto flex pt-0">
+                  <h1 style="font-family: lobster;"
+                     class="lg:font-medium text-primary text-xl pt-4 md:text-xl lg:text-xl flex justify-center mx-auto">
+                     Sutan Parsaulian L.</h1>
+                  <p class="text-primary flex justify-center py-1">Mahasiswa UISI</p>
+                  <p class="felx text-center justify-center pt-2">“Pertama kali nyoba, nggak kecewa, cocoklah buat di
+                     Sulawesi yang mayoritas masakannya pedas.”</p>
+               </div>
+               <div class="card lg:h-auto w-60 lg:w-80 bg-white flex-auto snap-start rounded-xl p-4 shadow-lg">
+                  <img src="dist/img/sutan.png" alt="Image 1" class="w-auto flex pt-0">
+                  <h1 style="font-family: lobster;"
+                     class="lg:font-medium text-primary text-xl pt-4 md:text-xl lg:text-xl flex justify-center mx-auto">
+                     Sutan Parsaulian L.</h1>
+                  <p class="text-primary flex justify-center py-1">Mahasiswa UISI</p>
+                  <p class="felx text-center justify-center pt-2">“Pertama kali nyoba, nggak kecewa, cocoklah buat di
+                     Sulawesi yang mayoritas masakannya pedas.”</p>
+               </div>
+            </div>
+
+
+
+            <div class="slider-controls justify-between flex -translate-y-60 lg:-translate-y-72 z-50 mx-4 lg:mx-36">
+               <button class="prev-btn text-gray-700 py-2 px-4 rounded-full">
+                  <img src="dist/img/prev-button.png" class="h-14" alt="">
+               </button>
+
+               <button class="next-btn text-gray-700 py-2 px-4 rounded-full">
+                  <img src="dist/img/next-button.png" class="h-14" alt="">
+               </button>
+            </div>
+
+            <!-- Image sambal -->
+            <img src="dist/img/sambalCumiTrnas.png"
+               class="absolute h-14 lg:h-24 lg:-translate-x-11 lg:-translate-y-40 -translate-x-1 right-0 -translate-y-20 -rotate-45"
+               alt="">
+         </div>
+      </div>
+   </section>
+   <!-- Section 4  -->
+
+   <!-- Section 5 (Hubungi Kami) -->
+   <section id="hubungikami" class="top-36">
+      <div class="flex flex-items justify-center lg:scale-125 lg:mb-40" style="height: 100vh;">
+         <div class="mx-auto w-80 scale-110 my-auto shadow-2xl rounded-xl">
+            <form action="" class="grid grid-rows-7 relative">
+               <h1 style="font-family: lobster;" class="mx-auto text-primary text-4xl mt-6">Hubungi Kami</h1>
+               <p class="mx-auto mt-5 absolute top-12 text-lg scale-75 text-center">Kirim pesan untuk kami melalui form
+                  di bawah ini</p>
+               <input type="text" name="nama" id="nama"
+                  class="mx-7 p-4 mt-20 h-10 rounded-xl border-gray-600 border-2 placeholder-black"
+                  placeholder="Nama" />
+               <input type="email" name="email" id="email"
+                  class="mx-7 p-4 mt-2 h-10  rounded-xl border-gray-600 border-2 placeholder-black" placeholder="Email">
+               <input type="tel" name="telepon" id="telepon"
+                  class="mx-7 p-4 mt-2 h-10 rounded-xl border-gray-600 border-2 placeholder-black"
+                  placeholder="Telepon">
+               <textarea id="message" rows="4"
+                  class="text-left w-auto align-top mx-7 p-4 border-2 mt-5 border-gray-600 rounded-xl h-32 placeholder-black placeholder:absolute"
+                  placeholder="Pesan"></textarea>
+               <button
+                  class="transition duration-150 hover:scale-90 ease-in-out mb-7 bg-primary mx-7 h-14 mt-9 text-white rounded-3xl ">Button
+                  A</button>
+            </form>
+         </div>
+      </div>
+   </section>
+   <!-- Section 5 End -->
+
+   <!-- Section 6 Footer -->
+   <section class="top-36">
+      <div class="flex relative">
+         <div class="relative bg-primary w-full lg:h-80 justify-center">
+            <svg width="1999" style="width: 150%;" height="180"
+               class="object-fill w-max absolute -translate-y-20 lg:-translate-y-40 lg:object-fill lg:h-auto z-10"
+               viewBox="0 0 1999 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M0.00012207 100.227H350.165C607.085 100.227 860.368 0 1080.75 0C1301.13 0 1441 100.227 1441 100.227V180H0.00012207V100.227Z"
+                  fill="#960E0D" />
+            </svg>
+
+            <div class="container mx-auto justify-center lg:mt-32 mt-20 mb-8 z-50">
+               <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
+                  <!-- Item 1 -->
+                  <div class="mx-auto p-4">
+                     <a href="#home" class="text-xl lg:text-2xl text-white font-semibold">Beranda</a>
+                  </div>
+                  <div class="mx-auto p-4">
+                     <a href="#tentangkami" class="text-xl lg:text-2xl text-white font-semibold">Tentang Kami</a>
+                  </div>
+                  <div class="mx-auto p-4">
+                     <a href="#hubungikami" class="text-xl lg:text-2xl text-white font-semibold">Hubungi Kami</a>
+                  </div>
+                  <a href="mailto:izzokugresik@gmail.com?subject=Mail from our Website" class="mx-auto p-4 flex w-auto">
+                     <?xml version="1.0" ?>
+                     <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                     <svg enable-background="new 0 0 512 512" fill="white" class="w-9 px-2" id="Layer_1" version="1.1"
+                        viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                           <path
+                              d="M512.1,447.8c-170.2,0-340,0-510.1,0C2,320.6,2,193.6,2,66.3c169.9,0,339.8,0,510.1,0C512.1,193.4,512.1,320.4,512.1,447.8   z M258.4,299.2c-13.6-11.5-27.2-23-40.8-34.5c-20.4,16.4-40.4,32.5-60.3,48.6c-23.7,19.1-47.3,38.4-71.4,57.2   c-4.2,3.3-5.2,6.3-5.2,11.1c0.2,18.8,0.1,37.7,0.1,56.5c0,1.8,0,3.5,0,5.5c119.7,0,238.7,0,357.8,0c0.2-0.8,0.4-1.3,0.4-1.7   c0-23.2,0.1-46.3-0.1-69.5c0-1.8-1.9-4.1-3.5-5.2C397.2,340,359,313,320.8,286c-8.7-6.1-17.4-12.3-26.2-18.5   C282.4,278.1,270.5,288.5,258.4,299.2z M256.2,222.8c10.5-6.9,156.2-147.3,158.4-152.5c-103.6,0-207.2,0-309.4,0   C155.3,120.8,205.8,171.9,256.2,222.8z M302.4,260.5c45.6,31.9,90.7,63.5,136.4,95.4c0-71.5,0-142,0-213.5   C393,182,347.9,221,302.4,260.5z M81.1,360.4c43.2-34.6,85.7-68.5,128.4-102.6c-42.9-36.5-85.3-72.6-128.4-109.2   C81.1,219.6,81.1,289.5,81.1,360.4z" />
+                        </g>
+                     </svg>
+                     <span class="font-normal lg:text-lg text-white">izzokugresik@gmail.com</span>
+                  </a>
+                  <a href="https://www.instagram.com/sambalizzokugresik/" class="mx-auto p-4 flex w-auto">
+                     <?xml version="1.0" ?>
+                     <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                     <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512"
+                        class="w-9 px-2" fill="white" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                           <path
+                              d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z" />
+                           <path
+                              d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z" />
+                           <path
+                              d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z" />
+                        </g>
+                     </svg>
+                     <span class="font-normal lg:text-lg text-white">@sambalizzokugresik</span>
+                  </a>
+                  <a href="https://wa.link/zlb5mc" class="mx-auto p-4 flex w-auto">
+                     <?xml version="1.0" ?>
+                     <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                     <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512"
+                        xml:space="preserve" fill="white" class="w-9 px-2" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                           <path
+                              d="M10.8,507.9c6.9-20.7,13.4-40.1,19.9-59.5c6.5-19.2,12.3-38.7,19.7-57.6c3.8-9.6,2.6-16.8-2.2-25.8   c-26.2-48.6-34-100.7-24.9-154.9c7.7-45.9,27.2-86.5,58.7-121C133.9,32.4,198.7,5.2,275.3,8.4c56.1,2.3,105.7,22.8,148,59.9   c39.4,34.5,65.1,77.4,77,128.4c9.6,41.1,8.5,82-3.3,122.5c-15,51.3-43.7,93.6-86.4,125.8c-59.3,44.8-125.8,58.7-198.3,44.6   c-21.8-4.2-42.6-12-62.2-22.6c-3.2-1.7-5.9-2.1-9.4-0.9c-37.2,12-74.5,23.9-111.7,35.8C23.4,503.7,17.7,505.6,10.8,507.9z    M74.1,445.2c2-0.5,2.9-0.7,3.8-1c23.3-7.4,46.6-14.9,70-22.1c2.2-0.7,5.2-0.1,7.3,0.9c10.1,5,19.8,11,30.2,15.4   c42.8,18.1,86.9,21,131.5,8.6c53.2-14.9,94-46.6,121.9-94.5c23.9-41,32.1-85.3,24.7-131.9c-9.4-59.3-39.8-105.9-90.1-139   C329.8,53,281.8,43.3,230.6,51.4c-44.1,7-81.8,27.1-112.9,59.3c-26.7,27.6-44.6,60.2-52.4,97.7c-11.1,53.7-2.9,104.5,26.9,150.8   c6,9.3,5.8,16.4,2.2,25.9C87.1,404.6,81,424.5,74.1,445.2z" />
+                           <path
+                              d="M389.3,321.8c-0.3,19.3-9.4,34-27.8,43.2c-18.1,9-36.5,11.3-55.4,3.9c-17-6.7-34.2-13.2-50.6-21.3   c-21.6-10.7-39.3-26.7-55.5-44.4c-17.9-19.6-33.1-41.4-45.6-64.7c-8.9-16.5-14.3-34-12.4-53.2c2-20.4,11.5-36.7,27.5-49   c3.2-2.4,8-3.5,12.1-3.9c5.3-0.4,10.6,0.4,15.9,0.8c4.4,0.4,6.8,3.5,8.3,7.1c3.9,9.6,7.4,19.2,11.1,28.9c2.5,6.5,4.4,13.3,7.4,19.6   c3.7,7.8,1.4,14.3-3.4,20.3c-4.1,5.1-8.4,10-13.1,14.4c-3.9,3.7-4.6,7.5-2,12c11.5,20.5,25.5,38.9,44,53.8   c12.2,9.8,25.7,17.1,39.7,23.9c4.1,2,8.1,1.7,11.3-2c6.9-7.9,13.9-15.7,20.7-23.7c4.4-5.1,6.6-6.1,12.5-3.1   c17.1,8.6,34,17.5,51,26.4C389,313,390,316.6,389.3,321.8z" />
+                        </g>
+                     </svg>
+                     <span class="font-normal lg:text-lg text-white">+62-812-1705-5586</span>
+                  </a>
+
+
+               </div>
+               <div class="flex flex-auto justify-center mx-auto">
+                  <h1 class="text-white my-3">Copyright abid nopal</h1>
+               </div>
+            </div>
+
+
+
+
+         </div>
+      </div>
+   </section>
+   <!-- Section 6 End -->
+
+   <script src="dist/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
